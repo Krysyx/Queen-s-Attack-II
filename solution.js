@@ -39,7 +39,7 @@ function queensAttack(n, k, r_q, c_q, obstacles) {
     let row = r_q + rCoeff;
     let column = c_q + cCoeff;
 
-    // make sure that the row and column is always greater than the total number of the board and greater than 0
+    // make sure that the row and column are always smaller than the board size and always greater than 0
     while (row <= n && row > 0 && column <= n && column > 0) {
       // if our obstacle array has the exact same row/column pair, we are facing an obstacle, thus we return
       // the current number of exposed cells
